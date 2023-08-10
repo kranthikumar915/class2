@@ -67,7 +67,7 @@ const Ex6 = (props) => {
 
         <section>
             {
-                view ? <LoginForm/> : <RegisterForm/>
+                view ?  <LoginForm/> : <RegisterForm/> 
             }
         </section>
         </div>

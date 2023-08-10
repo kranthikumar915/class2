@@ -19,24 +19,41 @@ function Ex1(props) {
     return (
         <div>
             <h1>states in functional component</h1>
-            <h2>var x = {x}</h2>
-            <h3>title = {title}</h3>
-            <hr />
-            <h2>view = {view ? "True" : "False"}</h2>
-            <hr />
-            <h3>user name = {user.name}</h3>
-            <h3>user email = {user.email}</h3>
-            <h3>user age = {user.age}</h3>
-            <hr />
-            <ol>
+             <hr/>
+             <h3>x= {x}</h3>
+             <h3>title = {title}</h3>
+             <h3>view = {view ? 'say true' : 'say False'}</h3>
+             <h3>user name = {user.name}</h3>
+             <h3>user email = {user.email}</h3>
+             <h3>user age = {user.age}</h3>
+             <hr/>
+             <ol>
                 {
-                    colors.map((item,index) => {
+                    colors.map((item,index)=>{
                         return (
-                            <li key = {index}>{item}</li>
+                            <li key={index}>{item}</li>
                         )
                     })
                 }
-            </ol>
+             </ol>
+             <h2>var x = {x}</h2>
+                <h3>title = {title}</h3>
+                <hr />
+                <h2>view = {view ? "True" : "False"}</h2>
+                <hr />
+                <h3>user name = {user.name}</h3>
+                <h3>user email = {user.email}</h3>
+                <h3>user age = {user.age}</h3>
+                <hr />
+                <ol>
+                    {
+                        colors.map((item,index) => {
+                            return (
+                                <li key = {index}>{item}</li>
+                            )
+                        })
+                    }
+                </ol>
         </div>
     )
 }
